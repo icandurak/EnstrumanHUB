@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentHUB", "InstrumentHUB\InstrumentHUB.csproj", "{58E7DB0B-3098-4DC0-929B-CB5027EF9758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58E7DB0B-3098-4DC0-929B-CB5027EF9758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E7DB0B-3098-4DC0-929B-CB5027EF9758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E7DB0B-3098-4DC0-929B-CB5027EF9758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E7DB0B-3098-4DC0-929B-CB5027EF9758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ACCC714-E92F-460B-8744-6ACB69F8DA77}
+	EndGlobalSection
+EndGlobal
