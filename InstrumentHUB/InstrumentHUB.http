@@ -1,6 +1,0 @@
-@InstrumentHUB_HostAddress = http://localhost:5089
-
-GET {{InstrumentHUB_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
