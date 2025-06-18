@@ -1,50 +1,59 @@
+// Konum: Models/Order.cs
+
+using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnstrümanHub.Models
 {
+    // Firestore'a kaydedilecek Order nesnesinin yapısını tanımlar.
+    [FirestoreData] // Bu nitelik, sınıfın Firestore ile uyumlu olduğunu belirtir.
     public class Order
     {
-        [Key]
-        public string Id { get; set; } = Guid.NewGuid().ToString();
+        // Not: Firestore'da doküman ID'si genellikle ayrı tutulur, bu yüzden Id alanı
+        // [FirestoreDocumentId] olarak işaretlenebilir, ancak biz manuel yönetiyoruz.
+        public string Id { get; set; } = string.Empty;
+
+        [FirestoreProperty]
+        public string UserId { get; set; } = string.Empty;
         
-        [Required]
-        public string UserId { get; set; }
+        [FirestoreProperty("customerName")] // Firestore'daki alan adını belirtir (camelCase standardı için)
+        public string CustomerName { get; set; } = string.Empty;
         
-        [Required]
-        public string ShippingAddress { get; set; }
+        [FirestoreProperty]
+        public string ShippingAddress { get; set; } = string.Empty;
         
-        [Required]
-        public string BillingAddress { get; set; }
+        [FirestoreProperty]
+        public string BillingAddress { get; set; } = string.Empty;
         
-        [Required]
-        public string PhoneNumber { get; set; }
+        [FirestoreProperty]
+        public string PhoneNumber { get; set; } = string.Empty;
         
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
+        [FirestoreProperty]
+        public string Email { get; set; } = string.Empty;
         
-        [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        public decimal TotalAmount { get; set; }
+        [FirestoreProperty]
+        public string Date { get; set; } = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         
-        public string Status { get; set; } = "Pending"; // Pending, Processing, Shipped, Delivered, Cancelled
+        [FirestoreProperty]
+        public decimal Total { get; set; }
         
-        public string PaymentStatus { get; set; } = "Pending"; // Pending, Paid, Failed
+        [FirestoreProperty]
+        public string Status { get; set; } = "Beklemede";
         
-        public string PaymentMethod { get; set; }
+        [FirestoreProperty]
+        public string PaymentMethod { get; set; } = string.Empty;
         
-        public string TrackingNumber { get; set; }
+        [FirestoreProperty]
+        public string? TrackingNumber { get; set; } // Null olabilir
         
-        public string Notes { get; set; }
-        
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        
-        public DateTime? UpdatedAt { get; set; }
-        
-        // Navigation properties
-        public virtual ICollection<OrderItem> OrderItems { get; set; }
+        [FirestoreProperty]
+        public string? Notes { get; set; } // Null olabilir
+
+        // Bu alanlar Firestore'a doğrudan yazılmaz, sadece program içinde kullanılır.
+        // Eğer bunları da yazmak isterseniz [FirestoreProperty] ekleyin.
+        public virtual User User { get; set; } = null!; // CS8618 uyarısını giderir
+
+        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
-} 
+}

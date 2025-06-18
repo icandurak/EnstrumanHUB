@@ -1,87 +1,60 @@
-﻿using EnstrümanHub.Models;
+using EnstrümanHub.Models;
 namespace EnstrümanHub.Data
 {
     public static class ApplicationContext
     {
-        public static List<Gitar> Gitarlar { get; set; }
-        public static List<BassGitar> BassGitarlar { get; set; }
-        public static List<Bateri> Bateriler { get; set; }
-
-        static ApplicationContext()
+        public static List<Gitar> Gitarlar { get; set; } = new List<Gitar>()
         {
-            Gitarlar = new List<Gitar>()
+            new Gitar
             {
-                new Gitar() {Id=1,
-                             Title="Fender Stratocaster",
-                             Price=1000,
-                             perde_sayisi=21,
-                             gövde_tipi="Ihlamur Ağacı",
-                             klavye_tipi="Gülağacı",
-                             kasa_tipi="Stratocaster",
-                             marka="Fender",
-                             uretim_yeri="Mexico",
-                             manyetik_tipi="SSS"
-
-                             },
-
-                new Gitar() {Id=2,
-                             Title="Gibson Les Paul",
-                             Price=2000,
-                             perde_sayisi=22,
-                             gövde_tipi="Maun Ağacı",
-                             klavye_tipi="Gülağacı",
-                             kasa_tipi="Les Paul",
-                             marka="Gibson",
-                             uretim_yeri="USA",
-                             manyetik_tipi="HH"
-
-                             }
-
-            };
-
-            BassGitarlar = new List<BassGitar>()
+                Id = 1,
+                Name = "Fender Stratocaster",
+                Brand = "Fender",
+                Price = 1200,
+                Description = "Klasik elektro gitar",
+                ImageUrl = "https://example.com/stratocaster.jpg",
+                Stock = 5
+            },
+            new Gitar
             {
-                new BassGitar() { Id = 1,
-                    Title = "Fender Bass",
-                    Price = 1000,
-                    marka = "Fender"
+                Id = 2,
+                Name = "Gibson Les Paul",
+                Brand = "Gibson",
+                Price = 2500,
+                Description = "Premium elektro gitar",
+                ImageUrl = "https://example.com/lespaul.jpg",
+                Stock = 3
+            }
+        };
 
-
-                }
-            };
-
-            Bateriler = new List<Bateri>()
+        public static List<BassGitar> BassGitarlar { get; set; } = new List<BassGitar>()
+        {
+            new BassGitar
             {
-                new Bateri() {Id=1,
-                             Title="Donner Bateri Seti",
-                             Price=2000,
-                             marka="Donner"
+                Id = 1,
+                Name = "Fender Precision Bass",
+                Brand = "Fender",
+                Price = 1500,
+                Description = "Klasik bas gitar",
+                ImageUrl = "https://example.com/precision.jpg",
+                Stock = 4
+            }
+        };
 
-
-                             }
-            };
-
-                
-                             
-
-
-            /*
-                        BassGitarlar = new List<BassGitar>()
-                        {
-                            new BassGitar() {Id=3,
-                                             Title="Fender Bass",
-                                             Price=500,
-                                             perde_sayisi=20,
-                                             marka="Fender",
-
-
-
-
-
-                        }
-                    }
-            */
-        }
+        public static List<Bateri> Bateriler { get; set; } = new List<Bateri>()
+        {
+            new Bateri
+            {
+                Id = 1,
+                Name = "Pearl Export",
+                Brand = "Pearl",
+                Price = 2000,
+                Description = "Profesyonel davul seti",
+                ImageUrl = "https://example.com/pearl.jpg",
+                Stock = 2
+            }
+        };
+        
 
     }
 }

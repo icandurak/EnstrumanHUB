@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Yönetimi - Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Ürün Yönetimi</h2>
+        <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addProductModal">Yeni Ürün Ekle</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Adı</th>
+                    <th>Marka</th>
+                    <th>Fiyat</th>
+                    <th>Kategori</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody id="productsTableBody">
+                <!-- Ürünler buraya gelecek -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Ürün Ekle Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProductModalLabel">Yeni Ürün Ekle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProductForm">
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Adı</label>
+                            <input type="text" class="form-control" id="productName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productBrand" class="form-label">Marka</label>
+                            <input type="text" class="form-control" id="productBrand" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Fiyat</label>
+                            <input type="number" class="form-control" id="productPrice" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productCategory" class="form-label">Kategori</label>
+                            <input type="text" class="form-control" id="productCategory" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/auth.js"></script>
+    <script>
+        const adminEmails = ["admin@gmail.com"];
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (!user || !adminEmails.includes(user.email)) {
+                window.location.href = '/admin/login.html';
+            }
+        });
+
+        // Ürünleri çek
+        async function fetchProducts() {
+            const snapshot = await firebase.firestore().collection('products').get();
+            const products = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            const tbody = document.getElementById('productsTableBody');
+            tbody.innerHTML = '';
+            products.forEach(product => {
+                tbody.innerHTML += `<tr>
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.brand}</td>
+                    <td>${product.price}</td>
+                    <td>${product.category || ''}</td>
+                    <td>
+                        <button class='btn btn-sm btn-warning' onclick='editProduct(${JSON.stringify(product)})'>Düzenle</button>
+                        <button class='btn btn-sm btn-danger' onclick='deleteProduct("${product.id}")'>Sil</button>
+                    </td>
+                </tr>`;
+            });
+        }
+        fetchProducts();
+
+        // Ürün ekle
+        document.getElementById('addProductForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('productName').value;
+            const brand = document.getElementById('productBrand').value;
+            const price = document.getElementById('productPrice').value;
+            const category = document.getElementById('productCategory').value;
+            await firebase.firestore().collection('products').add({
+                name, brand, price, category
+            });
+            document.getElementById('addProductForm').reset();
+            var modal = bootstrap.Modal.getInstance(document.getElementById('addProductModal'));
+            modal.hide();
+            fetchProducts();
+        });
+
+        // Ürün sil
+        async function deleteProduct(id) {
+            if (confirm('Bu ürünü silmek istediğinize emin misiniz?')) {
+                await firebase.firestore().collection('products').doc(id).delete();
+                fetchProducts();
+            }
+        }
+
+        // Ürün düzenle modalı ve işlemi
+        let editingProductId = null;
+        function editProduct(product) {
+            editingProductId = product.id;
+            document.getElementById('productName').value = product.name;
+            document.getElementById('productBrand').value = product.brand;
+            document.getElementById('productPrice').value = product.price;
+            document.getElementById('productCategory').value = product.category || '';
+            var modal = new bootstrap.Modal(document.getElementById('addProductModal'));
+            modal.show();
+            document.getElementById('addProductForm').onsubmit = async function(e) {
+                e.preventDefault();
+                const name = document.getElementById('productName').value;
+                const brand = document.getElementById('productBrand').value;
+                const price = document.getElementById('productPrice').value;
+                const category = document.getElementById('productCategory').value;
+                await firebase.firestore().collection('products').doc(editingProductId).update({
+                    name, brand, price, category
+                });
+                editingProductId = null;
+                document.getElementById('addProductForm').reset();
+                var modal = bootstrap.Modal.getInstance(document.getElementById('addProductModal'));
+                modal.hide();
+                fetchProducts();
+                document.getElementById('addProductForm').onsubmit = addProductHandler;
+            };
+        }
+        // Varsayılan ekleme işlemi için handler
+        async function addProductHandler(e) {
+            e.preventDefault();
+            const name = document.getElementById('productName').value;
+            const brand = document.getElementById('productBrand').value;
+            const price = document.getElementById('productPrice').value;
+            const category = document.getElementById('productCategory').value;
+            await firebase.firestore().collection('products').add({
+                name, brand, price, category
+            });
+            document.getElementById('addProductForm').reset();
+            var modal = bootstrap.Modal.getInstance(document.getElementById('addProductModal'));
+            modal.hide();
+            fetchProducts();
+        }
+        document.getElementById('addProductForm').onsubmit = addProductHandler;
+    </script>
+</body>
+</html> 

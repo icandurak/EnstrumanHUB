@@ -1,12 +1,2288 @@
 {
   "Version": 1,
-  "Hash": "H6jn7C/TWBJfchNVWIJl+ySGn967mR5QJQSvseVNn4c=",
+  "Hash": "gsGSYQWiLY3rQ5aPtIB6I4rGBw+u5ak9q1BGRmzY1yg=",
   "Source": "EnstrümanHub",
   "BasePath": "_content/EnstrümanHub",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "EnstrümanHub\\wwwroot",
+      "Source": "EnstrümanHub",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\categories.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/categories#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8wgsnoxcqh",
+      "Integrity": "eNR0DXToeZn124r4lSVBxURjJZwilFrIFgSnej+2xqY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\categories.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\dashboard.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/dashboard#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mh1jhlkmxs",
+      "Integrity": "toznUlD9mL28MN8NVY1RJ1bGj9Ky2/4ipfCw3eUJGqQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\dashboard.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\login.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vnmy8depz3",
+      "Integrity": "xdwJMtT2I1ubVQGFRFmTcH4630+g8Kt5vddpyEOSAXo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\orders.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/orders#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8edj34jzoy",
+      "Integrity": "cNKpwfQ9ocK2fGi7fK06f5G1YYaAhFlrtRHO2fGMOh4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\orders.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\products.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/products#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g7b87krrw5",
+      "Integrity": "vJGJjfwbw3s7fNblOUQxJPWOkEGawt6cnP3F756ruZo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\products.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\users.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "admin/users#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9xl7nmmh0z",
+      "Integrity": "Q2YZoxzG3TukwtxZ38pX1lM24dlixsK1KgpHJlhJey0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\users.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\bass-man-956a7141-1-scaled.jpg",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "bass-man-956a7141-1-scaled#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hcvxy89312",
+      "Integrity": "DxGAKEA6XjO3CuiA7k1myqKppQbl778O3d/lOXvQNI4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bass-man-956a7141-1-scaled.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\cart.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "cart#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0i0tbsjl17",
+      "Integrity": "yPL+tYIGa8dScgo89UhY1sAPlG2FHtECfg5/eMA9ea4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cart.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\css\\style.css",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yaxh71nsek",
+      "Integrity": "2j3SSnlxcNwkdiZr5HainLIBdUzPq5ieqqaQfZegiF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\index.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c2llorzhir",
+      "Integrity": "5DH1lc0O1iFXHnTwxo8LgbLxb4+1ciiVakx5aWk9XfQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\auth.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/auth#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pey3g3baos",
+      "Integrity": "DwNHq07O896SP12M/jNhF05FxxFH9KAlNFbNMLqv1o8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\auth.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\cart.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/cart#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "43vf5bm1f7",
+      "Integrity": "IBzV9aJVZO9nXFiuRE4Jo5StiNE6qd8ieCuGV0eepEk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cart.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\common.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/common#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f3hezltja0",
+      "Integrity": "9ao3N9tjCyD8bpCH41aNMGuqZxdI11iC5TrfmAZxeig=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\common.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\home.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/home#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tbx0w6un7s",
+      "Integrity": "uUAn6cRWp/dFbQeN9MLUOdbK61+gQOspAyNsnNSiF+A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\main.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zakubfhuhr",
+      "Integrity": "S9mHq4G4fRtSkZaxV3Np81XYIRpepHfm0uRb0zRwyxs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\product-details.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/product-details#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "20ep62dr57",
+      "Integrity": "IrHW30BJfFhGmp/txDB0V8zWea9uBBrRUt3WpyVU+Hw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product-details.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\products.js",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "js/products#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "co0wmgepy0",
+      "Integrity": "bAHu4JPk1OwlAdIaNoy8UUKIpZtOd7wCSsjHc9lzdho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\products.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\login.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lwgolaoucu",
+      "Integrity": "lQgP9s/r9hVSl2L09QkELh4tRncHBwPPUXPiYJy+AOQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\logoEnsturmanHUB.png",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "logoEnsturmanHUB#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b5yoz6fiw6",
+      "Integrity": "IfJSi1dBL5+BVsj79aPq/wifig4Zdlf65/muItXdtMI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logoEnsturmanHUB.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\product-details.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "product-details#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6sy99w3t5m",
+      "Integrity": "qk6WkoGvWA+mdgd7Dy9P2dAmZBkBg/cU5IF0zDQ3EKE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\product-details.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\products.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "products#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g1pespsgbk",
+      "Integrity": "vCkZUcP5CSPmTqNQyBzQGv0Na+2tLNk6czzD0VL4sqA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\products.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\register.html",
+      "SourceId": "EnstrümanHub",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\",
+      "BasePath": "_content/EnstrümanHub",
+      "RelativePath": "register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hxnbzoeqt6",
+      "Integrity": "G+98dn9cNZC/uUre+f/iSynvH269gPmqURjSs1eq3vc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\register.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "admin/categories.8wgsnoxcqh.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\categories.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eNR0DXToeZn124r4lSVBxURjJZwilFrIFgSnej+2xqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 14:52:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wgsnoxcqh"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/categories.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eNR0DXToeZn124r4lSVBxURjJZwilFrIFgSnej+2xqY="
+        }
+      ]
+    },
+    {
+      "Route": "admin/categories.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\categories.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eNR0DXToeZn124r4lSVBxURjJZwilFrIFgSnej+2xqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 14:52:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eNR0DXToeZn124r4lSVBxURjJZwilFrIFgSnej+2xqY="
+        }
+      ]
+    },
+    {
+      "Route": "admin/dashboard.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"toznUlD9mL28MN8NVY1RJ1bGj9Ky2/4ipfCw3eUJGqQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 22:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-toznUlD9mL28MN8NVY1RJ1bGj9Ky2/4ipfCw3eUJGqQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/dashboard.mh1jhlkmxs.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"toznUlD9mL28MN8NVY1RJ1bGj9Ky2/4ipfCw3eUJGqQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 22:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh1jhlkmxs"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-toznUlD9mL28MN8NVY1RJ1bGj9Ky2/4ipfCw3eUJGqQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/login.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xdwJMtT2I1ubVQGFRFmTcH4630+g8Kt5vddpyEOSAXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 17:11:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xdwJMtT2I1ubVQGFRFmTcH4630+g8Kt5vddpyEOSAXo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/login.vnmy8depz3.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xdwJMtT2I1ubVQGFRFmTcH4630+g8Kt5vddpyEOSAXo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 17:11:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vnmy8depz3"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xdwJMtT2I1ubVQGFRFmTcH4630+g8Kt5vddpyEOSAXo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/orders.8edj34jzoy.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\orders.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cNKpwfQ9ocK2fGi7fK06f5G1YYaAhFlrtRHO2fGMOh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 22:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8edj34jzoy"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/orders.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cNKpwfQ9ocK2fGi7fK06f5G1YYaAhFlrtRHO2fGMOh4="
+        }
+      ]
+    },
+    {
+      "Route": "admin/orders.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\orders.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cNKpwfQ9ocK2fGi7fK06f5G1YYaAhFlrtRHO2fGMOh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 22:04:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cNKpwfQ9ocK2fGi7fK06f5G1YYaAhFlrtRHO2fGMOh4="
+        }
+      ]
+    },
+    {
+      "Route": "admin/products.g7b87krrw5.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\products.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJGJjfwbw3s7fNblOUQxJPWOkEGawt6cnP3F756ruZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 23:30:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g7b87krrw5"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/products.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJGJjfwbw3s7fNblOUQxJPWOkEGawt6cnP3F756ruZo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/products.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\products.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8108"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vJGJjfwbw3s7fNblOUQxJPWOkEGawt6cnP3F756ruZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 23:30:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vJGJjfwbw3s7fNblOUQxJPWOkEGawt6cnP3F756ruZo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/users.9xl7nmmh0z.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\users.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3016"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q2YZoxzG3TukwtxZ38pX1lM24dlixsK1KgpHJlhJey0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 14:52:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9xl7nmmh0z"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/users.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q2YZoxzG3TukwtxZ38pX1lM24dlixsK1KgpHJlhJey0="
+        }
+      ]
+    },
+    {
+      "Route": "admin/users.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\users.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3016"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q2YZoxzG3TukwtxZ38pX1lM24dlixsK1KgpHJlhJey0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 14:52:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q2YZoxzG3TukwtxZ38pX1lM24dlixsK1KgpHJlhJey0="
+        }
+      ]
+    },
+    {
+      "Route": "bass-man-956a7141-1-scaled.hcvxy89312.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\bass-man-956a7141-1-scaled.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxGAKEA6XjO3CuiA7k1myqKppQbl778O3d/lOXvQNI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 14:44:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hcvxy89312"
+        },
+        {
+          "Name": "label",
+          "Value": "bass-man-956a7141-1-scaled.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxGAKEA6XjO3CuiA7k1myqKppQbl778O3d/lOXvQNI4="
+        }
+      ]
+    },
+    {
+      "Route": "bass-man-956a7141-1-scaled.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\bass-man-956a7141-1-scaled.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DxGAKEA6XjO3CuiA7k1myqKppQbl778O3d/lOXvQNI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 09 Apr 2025 14:44:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DxGAKEA6XjO3CuiA7k1myqKppQbl778O3d/lOXvQNI4="
+        }
+      ]
+    },
+    {
+      "Route": "cart.0i0tbsjl17.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\cart.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPL+tYIGa8dScgo89UhY1sAPlG2FHtECfg5/eMA9ea4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 19:19:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0i0tbsjl17"
+        },
+        {
+          "Name": "label",
+          "Value": "cart.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPL+tYIGa8dScgo89UhY1sAPlG2FHtECfg5/eMA9ea4="
+        }
+      ]
+    },
+    {
+      "Route": "cart.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\cart.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yPL+tYIGa8dScgo89UhY1sAPlG2FHtECfg5/eMA9ea4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 19:19:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yPL+tYIGa8dScgo89UhY1sAPlG2FHtECfg5/eMA9ea4="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j3SSnlxcNwkdiZr5HainLIBdUzPq5ieqqaQfZegiF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 18:38:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j3SSnlxcNwkdiZr5HainLIBdUzPq5ieqqaQfZegiF0="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.yaxh71nsek.css",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j3SSnlxcNwkdiZr5HainLIBdUzPq5ieqqaQfZegiF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 18:38:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yaxh71nsek"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j3SSnlxcNwkdiZr5HainLIBdUzPq5ieqqaQfZegiF0="
+        }
+      ]
+    },
+    {
+      "Route": "index.c2llorzhir.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11564"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5DH1lc0O1iFXHnTwxo8LgbLxb4+1ciiVakx5aWk9XfQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 19:17:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c2llorzhir"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5DH1lc0O1iFXHnTwxo8LgbLxb4+1ciiVakx5aWk9XfQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11564"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5DH1lc0O1iFXHnTwxo8LgbLxb4+1ciiVakx5aWk9XfQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 19:17:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5DH1lc0O1iFXHnTwxo8LgbLxb4+1ciiVakx5aWk9XfQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/auth.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DwNHq07O896SP12M/jNhF05FxxFH9KAlNFbNMLqv1o8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 13:06:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DwNHq07O896SP12M/jNhF05FxxFH9KAlNFbNMLqv1o8="
+        }
+      ]
+    },
+    {
+      "Route": "js/auth.pey3g3baos.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DwNHq07O896SP12M/jNhF05FxxFH9KAlNFbNMLqv1o8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 13:06:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pey3g3baos"
+        },
+        {
+          "Name": "label",
+          "Value": "js/auth.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DwNHq07O896SP12M/jNhF05FxxFH9KAlNFbNMLqv1o8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.43vf5bm1f7.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IBzV9aJVZO9nXFiuRE4Jo5StiNE6qd8ieCuGV0eepEk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "43vf5bm1f7"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IBzV9aJVZO9nXFiuRE4Jo5StiNE6qd8ieCuGV0eepEk="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IBzV9aJVZO9nXFiuRE4Jo5StiNE6qd8ieCuGV0eepEk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IBzV9aJVZO9nXFiuRE4Jo5StiNE6qd8ieCuGV0eepEk="
+        }
+      ]
+    },
+    {
+      "Route": "js/common.f3hezltja0.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\common.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9ao3N9tjCyD8bpCH41aNMGuqZxdI11iC5TrfmAZxeig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 06:21:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f3hezltja0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/common.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9ao3N9tjCyD8bpCH41aNMGuqZxdI11iC5TrfmAZxeig="
+        }
+      ]
+    },
+    {
+      "Route": "js/common.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\common.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9ao3N9tjCyD8bpCH41aNMGuqZxdI11iC5TrfmAZxeig=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 06:21:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9ao3N9tjCyD8bpCH41aNMGuqZxdI11iC5TrfmAZxeig="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uUAn6cRWp/dFbQeN9MLUOdbK61+gQOspAyNsnNSiF+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 01:10:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uUAn6cRWp/dFbQeN9MLUOdbK61+gQOspAyNsnNSiF+A="
+        }
+      ]
+    },
+    {
+      "Route": "js/home.tbx0w6un7s.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\home.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4875"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uUAn6cRWp/dFbQeN9MLUOdbK61+gQOspAyNsnNSiF+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 01:10:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tbx0w6un7s"
+        },
+        {
+          "Name": "label",
+          "Value": "js/home.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uUAn6cRWp/dFbQeN9MLUOdbK61+gQOspAyNsnNSiF+A="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9mHq4G4fRtSkZaxV3Np81XYIRpepHfm0uRb0zRwyxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 07:18:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S9mHq4G4fRtSkZaxV3Np81XYIRpepHfm0uRb0zRwyxs="
+        }
+      ]
+    },
+    {
+      "Route": "js/main.zakubfhuhr.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S9mHq4G4fRtSkZaxV3Np81XYIRpepHfm0uRb0zRwyxs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 07:18:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zakubfhuhr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S9mHq4G4fRtSkZaxV3Np81XYIRpepHfm0uRb0zRwyxs="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-details.20ep62dr57.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\product-details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IrHW30BJfFhGmp/txDB0V8zWea9uBBrRUt3WpyVU+Hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "20ep62dr57"
+        },
+        {
+          "Name": "label",
+          "Value": "js/product-details.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IrHW30BJfFhGmp/txDB0V8zWea9uBBrRUt3WpyVU+Hw="
+        }
+      ]
+    },
+    {
+      "Route": "js/product-details.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\product-details.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IrHW30BJfFhGmp/txDB0V8zWea9uBBrRUt3WpyVU+Hw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:37:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IrHW30BJfFhGmp/txDB0V8zWea9uBBrRUt3WpyVU+Hw="
+        }
+      ]
+    },
+    {
+      "Route": "js/products.co0wmgepy0.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\products.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAHu4JPk1OwlAdIaNoy8UUKIpZtOd7wCSsjHc9lzdho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:18:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "co0wmgepy0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/products.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAHu4JPk1OwlAdIaNoy8UUKIpZtOd7wCSsjHc9lzdho="
+        }
+      ]
+    },
+    {
+      "Route": "js/products.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\products.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAHu4JPk1OwlAdIaNoy8UUKIpZtOd7wCSsjHc9lzdho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:18:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAHu4JPk1OwlAdIaNoy8UUKIpZtOd7wCSsjHc9lzdho="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lQgP9s/r9hVSl2L09QkELh4tRncHBwPPUXPiYJy+AOQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 10:49:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lQgP9s/r9hVSl2L09QkELh4tRncHBwPPUXPiYJy+AOQ="
+        }
+      ]
+    },
+    {
+      "Route": "login.lwgolaoucu.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lQgP9s/r9hVSl2L09QkELh4tRncHBwPPUXPiYJy+AOQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 10:49:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwgolaoucu"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lQgP9s/r9hVSl2L09QkELh4tRncHBwPPUXPiYJy+AOQ="
+        }
+      ]
+    },
+    {
+      "Route": "logoEnsturmanHUB.b5yoz6fiw6.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\logoEnsturmanHUB.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IfJSi1dBL5+BVsj79aPq/wifig4Zdlf65/muItXdtMI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 15:28:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b5yoz6fiw6"
+        },
+        {
+          "Name": "label",
+          "Value": "logoEnsturmanHUB.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IfJSi1dBL5+BVsj79aPq/wifig4Zdlf65/muItXdtMI="
+        }
+      ]
+    },
+    {
+      "Route": "logoEnsturmanHUB.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\logoEnsturmanHUB.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IfJSi1dBL5+BVsj79aPq/wifig4Zdlf65/muItXdtMI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 15:28:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IfJSi1dBL5+BVsj79aPq/wifig4Zdlf65/muItXdtMI="
+        }
+      ]
+    },
+    {
+      "Route": "product-details.6sy99w3t5m.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\product-details.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qk6WkoGvWA+mdgd7Dy9P2dAmZBkBg/cU5IF0zDQ3EKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6sy99w3t5m"
+        },
+        {
+          "Name": "label",
+          "Value": "product-details.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qk6WkoGvWA+mdgd7Dy9P2dAmZBkBg/cU5IF0zDQ3EKE="
+        }
+      ]
+    },
+    {
+      "Route": "product-details.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\product-details.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qk6WkoGvWA+mdgd7Dy9P2dAmZBkBg/cU5IF0zDQ3EKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 12:29:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qk6WkoGvWA+mdgd7Dy9P2dAmZBkBg/cU5IF0zDQ3EKE="
+        }
+      ]
+    },
+    {
+      "Route": "products.g1pespsgbk.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\products.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vCkZUcP5CSPmTqNQyBzQGv0Na+2tLNk6czzD0VL4sqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:16:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1pespsgbk"
+        },
+        {
+          "Name": "label",
+          "Value": "products.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vCkZUcP5CSPmTqNQyBzQGv0Na+2tLNk6czzD0VL4sqA="
+        }
+      ]
+    },
+    {
+      "Route": "products.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\products.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vCkZUcP5CSPmTqNQyBzQGv0Na+2tLNk6czzD0VL4sqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Jun 2025 09:16:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vCkZUcP5CSPmTqNQyBzQGv0Na+2tLNk6czzD0VL4sqA="
+        }
+      ]
+    },
+    {
+      "Route": "register.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+98dn9cNZC/uUre+f/iSynvH269gPmqURjSs1eq3vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 13:07:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G+98dn9cNZC/uUre+f/iSynvH269gPmqURjSs1eq3vc="
+        }
+      ]
+    },
+    {
+      "Route": "register.hxnbzoeqt6.html",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3210"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G+98dn9cNZC/uUre+f/iSynvH269gPmqURjSs1eq3vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 13:07:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hxnbzoeqt6"
+        },
+        {
+          "Name": "label",
+          "Value": "register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G+98dn9cNZC/uUre+f/iSynvH269gPmqURjSs1eq3vc="
+        }
+      ]
+    }
+  ]
 }

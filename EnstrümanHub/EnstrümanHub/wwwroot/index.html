@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnstrümanHub - Müzik Enstrümanları E-Ticaret</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo" onclick="window.location.href='/'">
+                    <img src="logoEnsturmanHUB.png" width="300" height="150">
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Enstrüman ara...">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon" id="loginBtn">
+                        <i class="fas fa-user"></i>
+                        <span>Giriş</span>
+                    </button>
+                    <button class="btn-icon" id="cartBtn" type="button" onclick="window.location.href='/Home/Cart'">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepet</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" class="nav-link active">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Kategoriler <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Home/Products?category=Gitar">Gitar</a></li>
+                            <li><a href="/Home/Products?category=Bass Gitar">Bass Gitar</a></li>
+                            <li><a href="/Home/Products?category=Piyano">Piyano</a></li>
+                            <li><a href="/Home/Products?category=Bateri">Bateri</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Home/Products" class="nav-link">Tüm Ürünler</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Müziğin Kalbi Burada Atıyor</h2>
+                    <p>En kaliteli enstrümanlar, en uygun fiyatlarla</p>
+                    <button class="btn-primary" onclick="window.location.href='/Home/Products'">
+                        <i class="fas fa-music"></i>
+                        Ürünleri Keşfet
+                    </button>
+                </div>
+                <div class="slide-image">
+                    <img src="https://ciomit.com/wp-content/uploads/2023/12/220304DP_COMIT_Color_Web-2.jpg" width="300" height="200" alt="Müzik Enstrümanları">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Popüler Kategoriler</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="window.location.href='/Home/Products?category=Gitar'">
+                    <div class="category-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Gitar</h3>
+                    <p>Akustik ve elektro gitarlar</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='/Home/Products?category=Piyano'">
+                    <div class="category-icon">
+                        <i class="fas fa-piano"></i>
+                    </div>
+                    <h3>Piyano</h3>
+                    <p>Dijital ve akustik piyanolar</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='/Home/Products?category=Bateri'">
+                    <div class="category-icon">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h3>Bateri</h3>
+                    <p>Akustik ve elektronik bateriler</p>
+                </div>
+                <div class="category-card" onclick="window.location.href='/Home/Products?category=Bass Gitar'">
+                    <div class="category-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Bass Gitar</h3>
+                    <p>4 ve 5 telli bass gitarlar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hakkımızda</h2>
+                    <p>EnstrümanHub, 2010 yılından beri Türkiye'nin en güvenilir müzik enstrümanları mağazası olarak hizmet vermektedir.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Orijinal Ürünler</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Hızlı Kargo</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2 Yıl Garanti</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <span>7/24 Destek</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="bass-man-956a7141-1-scaled.jpg" alt="Müzik Mağazası">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Beyoğlu, İstanbul, Türkiye</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+90 212 555 0123</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@enstrumanhub.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Kampanyalardan Haberdar Olun</h2>
+                <p>Yeni ürünler ve özel indirimlerden ilk siz haberdar olun</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EnstrümanHub</h3>
+                    <p>Türkiye'nin en güvenilir müzik enstrümanları mağazası</p>
+                    <div class="social-links">
+                        <a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="/Home/Products?category=gitar">Gitar</a></li>
+                        <li><a href="/Home/Products?category=piyano">Piyano</a></li>
+                        <li><a href="/Home/Products?category=bateri">Bateri</a></li>
+                        <li><a href="/Home/Products?category=bass">Bass Gitar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Müşteri Hizmetleri</h4>
+                    <ul>
+                        <li><a href="#contact">İletişim</a></li>
+                        <li><a href="javascript:void(0)">Kargo Bilgileri</a></li>
+                        <li><a href="javascript:void(0)">İade Koşulları</a></li>
+                        <li><a href="javascript:void(0)">SSS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@enstrumanhub.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EnstrümanHub. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="/js/auth.js"></script>
+    <script>
+        // NAVBAR'daki Giriş butonunu aktif hale getir
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginBtn = document.getElementById('loginBtn');
+            if (loginBtn) {
+                loginBtn.onclick = function() {
+                    window.location.href = '/login.html';
+                };
+            }
+            var cartBtn = document.getElementById('cartBtn');
+            if (cartBtn) {
+                cartBtn.onclick = function() {
+                    window.location.href = '/Home/Cart';
+                };
+            }
+        });
+    </script>
+</body>
+</html> 

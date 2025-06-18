@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\categories.html",
+      "PackagePath": "staticwebassets\\admin\\categories.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\dashboard.html",
+      "PackagePath": "staticwebassets\\admin\\dashboard.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\login.html",
+      "PackagePath": "staticwebassets\\admin\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\orders.html",
+      "PackagePath": "staticwebassets\\admin\\orders.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\products.html",
+      "PackagePath": "staticwebassets\\admin\\products.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\admin\\users.html",
+      "PackagePath": "staticwebassets\\admin\\users.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\bass-man-956a7141-1-scaled.jpg",
+      "PackagePath": "staticwebassets\\bass-man-956a7141-1-scaled.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\cart.html",
+      "PackagePath": "staticwebassets\\cart.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\product-details.js",
+      "PackagePath": "staticwebassets\\js\\product-details.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\js\\products.js",
+      "PackagePath": "staticwebassets\\js\\products.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\logoEnsturmanHUB.png",
+      "PackagePath": "staticwebassets\\logoEnsturmanHUB.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\product-details.html",
+      "PackagePath": "staticwebassets\\product-details.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\products.html",
+      "PackagePath": "staticwebassets\\products.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BilgiSistemler\\EnstrümanHub_Final\\EnstrümanHub\\wwwroot\\register.html",
+      "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EnstrümanHub.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EnstrümanHub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EnstrümanHub.props",
+      "PackagePath": "build\\EnstrümanHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EnstrümanHub.props",
+      "PackagePath": "buildMultiTargeting\\EnstrümanHub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EnstrümanHub.props",
+      "PackagePath": "buildTransitive\\EnstrümanHub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

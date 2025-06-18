@@ -5,26 +5,26 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/AuthUsers/register": {
+    "/api/Admin/login": {
       "post": {
         "tags": [
-          "AuthUsers"
+          "Admin"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequest"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequest"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterRequest"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             }
           }
@@ -36,30 +36,23 @@
         }
       }
     },
-    "/api/AuthUsers/login": {
-      "post": {
+    "/api/Admin/dashboard": {
+      "get": {
         "tags": [
-          "AuthUsers"
+          "Admin"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginRequest"
-              }
-            }
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        },
+        }
+      }
+    },
+    "/api/Admin/verify": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -256,7 +249,33 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gitar"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gitar"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Gitar"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -283,16 +302,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Enstruman"
-        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -301,27 +310,6 @@
       }
     },
     "/api/Enstruman/Gitar/{id}": {
-      "get": {
-        "tags": [
-          "Enstruman"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Enstruman"
@@ -359,6 +347,44 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Enstruman"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gitar"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gitar"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Gitar"
+                }
+              }
+            }
           }
         }
       },
@@ -402,17 +428,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/GitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/GitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             }
           }
@@ -424,14 +453,40 @@
         }
       }
     },
-    "/api/Enstruman/Bass": {
+    "/api/Enstruman/BassGitar": {
       "get": {
         "tags": [
           "Enstruman"
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BassGitar"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BassGitar"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BassGitar"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -463,19 +518,9 @@
             "description": "Success"
           }
         }
-      },
-      "delete": {
-        "tags": [
-          "Enstruman"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
       }
     },
-    "/api/Enstruman/Bass/{id}": {
+    "/api/Enstruman/BassGitar/{id}": {
       "get": {
         "tags": [
           "Enstruman"
@@ -493,7 +538,24 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BassGitar"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BassGitar"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BassGitar"
+                }
+              }
+            }
           }
         }
       },
@@ -537,27 +599,6 @@
           }
         }
       },
-      "delete": {
-        "tags": [
-          "Enstruman"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
       "patch": {
         "tags": [
           "Enstruman"
@@ -577,21 +618,45 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/BassGitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/BassGitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/BassGitarJsonPatchDocument"
+                "type": "object",
+                "additionalProperties": { }
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Enstruman"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -606,7 +671,33 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bateri"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bateri"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bateri"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -633,16 +724,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Enstruman"
-        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -668,7 +749,24 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bateri"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bateri"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bateri"
+                }
+              }
+            }
           }
         }
       },
@@ -712,6 +810,49 @@
           }
         }
       },
+      "patch": {
+        "tags": [
+          "Enstruman"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": { }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": { }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": { }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
       "delete": {
         "tags": [
           "Enstruman"
@@ -732,41 +873,13 @@
             "description": "Success"
           }
         }
-      },
-      "patch": {
+      }
+    },
+    "/api/Orders/test": {
+      "get": {
         "tags": [
-          "Enstruman"
+          "Orders"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BateriJsonPatchDocument"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BateriJsonPatchDocument"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/BateriJsonPatchDocument"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "Success"
@@ -805,52 +918,6 @@
                   "items": {
                     "$ref": "#/components/schemas/Order"
                   }
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Orders"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Order"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Order"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Order"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -896,7 +963,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "tags": [
           "Orders"
         ],
@@ -914,17 +981,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Order"
+                "$ref": "#/components/schemas/OrderStatusUpdateRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Order"
+                "$ref": "#/components/schemas/OrderStatusUpdateRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Order"
+                "$ref": "#/components/schemas/OrderStatusUpdateRequest"
               }
             }
           }
@@ -1196,47 +1263,31 @@
             "type": "integer",
             "format": "int32"
           },
-          "title": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "brand": {
             "type": "string",
             "nullable": true
           },
           "price": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "format": "int32"
           },
-          "marka": {
+          "description": {
             "type": "string",
             "nullable": true
           },
-          "perde_sayisi": {
-            "type": "number",
-            "format": "double"
-          },
-          "uretim_yeri": {
+          "imageUrl": {
             "type": "string",
             "nullable": true
           },
-          "manyetik_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "gövde_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "klavye_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "kasa_tipi": {
-            "type": "string",
-            "nullable": true
+          "stock": {
+            "type": "integer",
+            "format": "int32"
           }
         },
-        "additionalProperties": false
-      },
-      "BassGitarJsonPatchDocument": {
-        "type": "object",
         "additionalProperties": false
       },
       "Bateri": {
@@ -1246,33 +1297,34 @@
             "type": "integer",
             "format": "int32"
           },
-          "title": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "brand": {
             "type": "string",
             "nullable": true
           },
           "price": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "format": "int32"
           },
-          "marka": {
+          "description": {
             "type": "string",
             "nullable": true
           },
-          "ek_sayısı": {
-            "type": "number",
-            "format": "double"
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "BateriJsonPatchDocument": {
-        "type": "object",
-        "additionalProperties": false
-      },
       "Category": {
-        "required": [
-          "name"
-        ],
         "type": "object",
         "properties": {
           "id": {
@@ -1280,9 +1332,8 @@
             "nullable": true
           },
           "name": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1294,47 +1345,31 @@
             "type": "integer",
             "format": "int32"
           },
-          "title": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "brand": {
             "type": "string",
             "nullable": true
           },
           "price": {
-            "type": "number",
-            "format": "double"
+            "type": "integer",
+            "format": "int32"
           },
-          "marka": {
+          "description": {
             "type": "string",
             "nullable": true
           },
-          "perde_sayisi": {
-            "type": "number",
-            "format": "double"
-          },
-          "uretim_yeri": {
+          "imageUrl": {
             "type": "string",
             "nullable": true
           },
-          "manyetik_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "gövde_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "klavye_tipi": {
-            "type": "string",
-            "nullable": true
-          },
-          "kasa_tipi": {
-            "type": "string",
-            "nullable": true
+          "stock": {
+            "type": "integer",
+            "format": "int32"
           }
         },
-        "additionalProperties": false
-      },
-      "GitarJsonPatchDocument": {
-        "type": "object",
         "additionalProperties": false
       },
       "Instrument": {
@@ -1420,33 +1455,20 @@
         "additionalProperties": false
       },
       "LoginRequest": {
-        "required": [
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "password": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
       "Order": {
-        "required": [
-          "billingAddress",
-          "email",
-          "phoneNumber",
-          "shippingAddress",
-          "totalAmount",
-          "userId"
-        ],
         "type": "object",
         "properties": {
           "id": {
@@ -1454,35 +1476,38 @@
             "nullable": true
           },
           "userId": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
           },
           "shippingAddress": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "billingAddress": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "phoneNumber": {
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
-          "totalAmount": {
+          "date": {
+            "type": "string",
+            "nullable": true
+          },
+          "total": {
             "type": "number",
             "format": "double"
           },
           "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "paymentStatus": {
             "type": "string",
             "nullable": true
           },
@@ -1498,14 +1523,8 @@
             "type": "string",
             "nullable": true
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
+          "user": {
+            "$ref": "#/components/schemas/User"
           },
           "orderItems": {
             "type": "array",
@@ -1564,35 +1583,17 @@
         },
         "additionalProperties": false
       },
-      "RegisterRequest": {
-        "required": [
-          "email",
-          "name",
-          "password"
-        ],
+      "OrderStatusUpdateRequest": {
         "type": "object",
         "properties": {
-          "name": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "minLength": 1,
+          "status": {
             "type": "string",
-            "format": "email"
-          },
-          "password": {
-            "minLength": 1,
-            "type": "string"
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
       "User": {
-        "required": [
-          "email",
-          "name"
-        ],
         "type": "object",
         "properties": {
           "id": {
@@ -1600,20 +1601,11 @@
             "nullable": true
           },
           "name": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "minLength": 1,
             "type": "string",
-            "format": "email"
-          },
-          "orders": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Order"
-            },
             "nullable": true
           }
         },

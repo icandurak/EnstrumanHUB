@@ -1,15 +1,13 @@
-﻿namespace EnstrümanHub.Models
+namespace EnstrümanHub.Models
 {
-    public class Gitar : Enstrumanlar
-
+    public class Gitar
     {
-        public string marka { get; set; }
-        public decimal perde_sayisi { get; set; }
-        public string uretim_yeri { get; set; }
-        public string manyetik_tipi { get; set; }
-        public string gövde_tipi { get; set; }
-        public string klavye_tipi { get; set; }
-        public string kasa_tipi { get; set; }
-
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Brand { get; set; } = string.Empty;
+        public int Price { get; set; } // Fiyat kuruş cinsinden (örn: 3700 TL = 370000)
+        public string Description { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
+        public int Stock { get; set; }
     }
 }

@@ -1,23 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using Google.Cloud.Firestore;
 
 namespace EnstrümanHub.Models
 {
+    [FirestoreData]
     public class User
     {
-        [Key]
-        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Id { get; set; } = string.Empty;
         
-        [Required]
-        [StringLength(100)]
-        public string Name { get; set; }
+        [FirestoreProperty]
+        public string Name { get; set; } = string.Empty;
         
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; }
-        
-        // Navigation property for Orders
-        public virtual ICollection<Order> Orders { get; set; }
+        [FirestoreProperty]
+        public string Email { get; set; } = string.Empty;
     }
 } 

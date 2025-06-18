@@ -1,50 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\models\\authusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\authusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\controllers\\authuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\authuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\bassgitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\bassgitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\instrument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\instrument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\controllers\\enstrumancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\enstrumancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\bateri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\bateri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\models\\gitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\gitar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\plan.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\plan.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\enstr\u00FCmanhub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\enstr\u00FCmanhub.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\enstr\u00FCmanhub_final\\enstr\u00FCmanhub\\controllers\\jsonpatchdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\controllers\\jsonpatchdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\models\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|c:\\users\\hp\\desktop\\proje\\son hali\\enstr\u00FCmanhub\\enstr\u00FCmanhub\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE7120E-9E60-4BB0-AD70-C6B4ADCEB573}|Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj|solutionrelative:enstr\u00FCmanhub\\services\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\talha\\Downloads\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,147 +77,212 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T08:26:05.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterRequest.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\DTOs\\RegisterRequest.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\DTOs\\RegisterRequest.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\DTOs\\RegisterRequest.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\DTOs\\RegisterRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:18:29.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\DTOs\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\DTOs\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\DTOs\\LoginRequest.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\DTOs\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:18:28.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "JwtTokenGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Services\\JwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Services\\JwtTokenGenerator.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Services\\JwtTokenGenerator.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Services\\JwtTokenGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:02:48.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthUsersController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Controllers\\AuthUsersController.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\AuthUsersController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Controllers\\AuthUsersController.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\AuthUsersController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T15:01:39.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-17T14:10:49.817Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthUsers.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\AuthUsers.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\AuthUsers.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\AuthUsers.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\AuthUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:07:19.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\UsersController.cs",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Product.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:02:48.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T16:34:41.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Models\\User.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T14:00:00.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwBEAAAA3AAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\talha\\Downloads\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\talha\\Downloads\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\talha\\Downloads\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\talha\\Downloads\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T12:55:08.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-14T12:55:08.899Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Order.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Order.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA9wC8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T12:36:35.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Instrument.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Instrument.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Instrument.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Instrument.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Instrument.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T12:30:51.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BassGitar.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\BassGitar.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\BassGitar.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\BassGitar.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\BassGitar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:41:27.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Category.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Category.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T15:00:33.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Gitar.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Gitar.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Gitar.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Gitar.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Gitar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:52:22.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnstrumanController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\EnstrumanController.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\EnstrumanController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\EnstrumanController.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\EnstrumanController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:50:37.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Data\\ApplicationContext.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwEYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:44:19.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Program.cs",
               "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Program.cs",
               "RelativeToolTip": "Enstr\u00FCmanHub\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAqwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAABoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T07:23:55.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T12:53:27.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PLAN.txt",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\PLAN.txt",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\PLAN.txt",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\PLAN.txt",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\PLAN.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-19T07:25:50.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Enstr\u00FCmanHub.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Enstr\u00FCmanHub.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-21T14:03:39.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JsonPatchDocument.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\JsonPatchDocument.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Controllers\\JsonPatchDocument.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Controllers\\JsonPatchDocument.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Controllers\\JsonPatchDocument.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:07:41.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bateri.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Bateri.cs",
+              "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\Models\\Bateri.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\Models\\Bateri.cs",
+              "RelativeToolTip": "Enstr\u00FCmanHub\\Models\\Bateri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:36:15.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\appsettings.json",
               "RelativeDocumentMoniker": "Enstr\u00FCmanHub\\appsettings.json",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\proje\\Son hali\\Enstr\u00FCmanHub\\Enstr\u00FCmanHub\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enstr\u00FCmanHub_Final\\Enstr\u00FCmanHub\\appsettings.json",
               "RelativeToolTip": "Enstr\u00FCmanHub\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-20T21:01:15.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T21:01:15.175Z"
             }
           ]
         }

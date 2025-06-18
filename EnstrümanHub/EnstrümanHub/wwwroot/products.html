@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler - EnstrümanHub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #333;
+        }
+
+        .product-details-content {
+            display: flex;
+            gap: 30px;
+        }
+
+        .product-details-image {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .product-details-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .product-details-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .product-details-brand {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .product-details-price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .product-details-stock {
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .product-details-stock.in-stock {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .product-details-stock.out-of-stock {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .product-details-description {
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .product-details-category {
+            font-size: 0.9em;
+            color: #666;
+            padding: 5px 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .product-details-actions {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .product-details-content {
+                flex-direction: column;
+            }
+
+            .product-details-image {
+                max-width: 100%;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+            }
+        }
+
+        .filter-panel .filter-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 32px;
+        }
+        .filter-panel .filter-group {
+            flex: 1 1 180px;
+            min-width: 180px;
+            max-width: 240px;
+            display: flex;
+            flex-direction: column;
+        }
+        .filter-panel .price-range {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .filter-panel .price-range input[type="number"] {
+            width: 70px;
+        }
+        @media (max-width: 900px) {
+            .filter-panel .filter-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .filter-panel .filter-group {
+                max-width: 100%;
+            }
+            .filter-panel .price-range input[type="number"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo" onclick="window.location.href='/'">
+                    <img src="logoEnsturmanHUB.png" width="200" height="120">
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Enstrüman ara...">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon" id="loginBtn" onclick="window.location.href='/login.html'">
+                        <i class="fas fa-user"></i>
+                        <span>Giriş</span>
+                    </button>
+                    <button class="btn-icon" id="cartBtn" onclick="window.location.href='/Home/Cart'">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepet</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/" class="nav-link">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Kategoriler <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" id="categoryDropdown">
+                            <!-- Kategoriler dinamik olarak buraya eklenecek -->
+                        </ul>
+                    </li>
+                    <li><a href="/Home/Products" class="nav-link active">Tüm Ürünler</a></li>
+                    <li><a href="/#about">Hakkımızda</a></li>
+                    <li><a href="/#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Ürünler</h2>
+            
+            <!-- Advanced Filter Panel -->
+            <div class="filter-panel" id="filterPanel">
+                <div class="filter-header" onclick="toggleFilterPanel()">
+                    <h3><i class="fas fa-filter"></i> Gelişmiş Filtreleme</h3>
+                    <i class="fas fa-chevron-up filter-toggle"></i>
+                </div>
+                <div class="filter-content">
+                    <div class="filter-group">
+                        <label for="searchTerm">Arama</label>
+                        <input type="text" id="searchTerm" placeholder="Ürün adı veya açıklama...">
+                    </div>
+                    <div class="filter-group">
+                        <label for="categoryFilter">Kategori</label>
+                        <select id="categoryFilter">
+                            <option value="">Tüm Kategoriler</option>
+                            <!-- Kategoriler dinamik olarak buraya eklenecek -->
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="brandFilter">Marka</label>
+                        <select id="brandFilter">
+                            <option value="">Tüm Markalar</option>
+                            <option value="fender">Fender</option>
+                            <option value="gibson">Gibson</option>
+                            <option value="yamaha">Yamaha</option>
+                            <option value="roland">Roland</option>
+                            <option value="pearl">Pearl</option>
+                            <option value="kawai">Kawai</option>
+                            <option value="ibanez">Ibanez</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Fiyat Aralığı</label>
+                        <div class="price-range">
+                            <input type="number" id="minPrice" placeholder="Min" min="0">
+                            <span>-</span>
+                            <input type="number" id="maxPrice" placeholder="Max" min="0">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sortField">Sıralama</label>
+                        <select id="sortField">
+                            <option value="name">İsme Göre</option>
+                            <option value="price">Fiyata Göre</option>
+                            <option value="brand">Markaya Göre</option>
+                            <option value="category">Kategoriye Göre</option>
+                            <option value="date">Tarihe Göre</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sortDirection">Sıralama Yönü</label>
+                        <select id="sortDirection">
+                            <option value="asc">Artan (A-Z, Düşük-Yüksek)</option>
+                            <option value="desc">Azalan (Z-A, Yüksek-Düşük)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="stockFilter">Stok Durumu</label>
+                        <select id="stockFilter">
+                            <option value="">Tümü</option>
+                            <option value="instock">Stokta Var</option>
+                            <option value="outofstock">Stokta Yok</option>
+                        </select>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="btn-clear" onclick="clearAllFilters()">
+                            <i class="fas fa-times"></i> Temizle
+                        </button>
+                        <button class="btn-filter" onclick="applyFilters()">
+                            <i class="fas fa-search"></i> Filtrele
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Header -->
+            <div class="products-header">
+                <div class="results-info">
+                    <span id="resultsCount">0 ürün gösteriliyor</span>
+                </div>
+                <div class="sort-controls">
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid" onclick="toggleView('grid')">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list" onclick="toggleView('list')">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Sepetim</h3>
+                <span class="close" onclick="hideModal('cartModal')">&times;</span>
+            </div>
+            <div class="modal-body" id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Toplam: <span id="cartTotal">0 ₺</span></strong>
+                </div>
+                <button class="btn-primary" onclick="window.location.href='/Home/Cart'">Sepeti Görüntüle</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Giriş Yap</h3>
+                <span class="close" onclick="hideModal('loginModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Giriş Yap</button>
+                </form>
+                <p class="auth-switch">Hesabınız yok mu? <a href="/register">Kayıt Ol</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Modal -->
+    <div id="productDetailsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProductName"></h3>
+                <span class="close" onclick="hideModal('productDetailsModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="product-details-content">
+                    <div class="product-details-image">
+                        <img id="modalProductImage" src="" alt="">
+                    </div>
+                    <div class="product-details-info">
+                        <div class="product-details-brand" id="modalProductBrand"></div>
+                        <div class="product-details-price" id="modalProductPrice"></div>
+                        <div class="product-details-stock" id="modalProductStock"></div>
+                        <div class="product-details-description" id="modalProductDescription"></div>
+                        <div class="product-details-category" id="modalProductCategory"></div>
+                        <div class="product-details-actions">
+                            <button class="btn-add-cart" id="modalAddToCartBtn">
+                                <i class="fas fa-shopping-cart"></i>
+                                Sepete Ekle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script>
+        // Firebase yapılandırması
+        const firebaseConfig = {
+            apiKey: "AIzaSyAS0-UuWWFNMSvnNGEzY0pdBGxhZLEqjnA",
+            authDomain: "enstrumand2.firebaseapp.com",
+            projectId: "enstrumand2",
+            storageBucket: "enstrumand2.firebasestorage.app",
+            messagingSenderId: "983179534658",
+            appId: "1:983179534658:web:bdccea5d518c26d8dbe8db",
+            measurementId: "G-7VXJLWTP28"
+        };
+
+        // Firebase'i başlat
+        console.log('Firebase başlatılıyor...');
+        firebase.initializeApp(firebaseConfig);
+        console.log('Firebase başlatıldı');
+
+        // Global değişkenler
+        let allProducts = [];
+        let allBrands = new Set(); // Markaları tutmak için Set kullanıyoruz
+        let currentFilters = {
+            category: '',
+            searchTerm: '',
+            brand: '',
+            minPrice: null,
+            maxPrice: null,
+            stockFilter: '',
+            sortField: 'name',
+            sortDirection: 'asc'
+        };
+
+        // Markaları getir ve filtreleme seçeneklerini güncelle
+        async function fetchAndUpdateBrands() {
+            console.log('Markalar getiriliyor...');
+            try {
+                const db = firebase.firestore();
+                const snapshot = await db.collection('products').get();
+                
+                // Tüm markaları topla
+                allBrands = new Set(snapshot.docs.map(doc => doc.data().brand));
+                console.log(`${allBrands.size} benzersiz marka bulundu:`, Array.from(allBrands));
+
+                // Marka filtresini güncelle
+                const brandFilter = document.getElementById('brandFilter');
+                brandFilter.innerHTML = '<option value="">Tüm Markalar</option>';
+                
+                // Markaları alfabetik sırala ve ekle
+                Array.from(allBrands).sort().forEach(brand => {
+                    brandFilter.innerHTML += `<option value="${brand}">${brand}</option>`;
+                });
+
+                console.log('Marka filtresi güncellendi');
+            } catch (error) {
+                console.error('Markalar yüklenirken hata oluştu:', error);
+            }
+        }
+
+        // Ürünleri getir ve görüntüle
+        async function fetchAndDisplayProducts() {
+            console.log('Ürünler getiriliyor...');
+            const startTime = performance.now();
+            
+            try {
+                const productsGrid = document.getElementById('productsGrid');
+                const resultsCount = document.getElementById('resultsCount');
+                
+                console.log('Firestore bağlantısı kuruluyor...');
+                const db = firebase.firestore();
+                console.log('Firestore bağlantısı kuruldu');
+
+                // Önce markaları getir
+                await fetchAndUpdateBrands();
+
+                console.log('Ürünler koleksiyonu sorgulanıyor...');
+                const snapshot = await db.collection('products').get();
+                console.log(`${snapshot.size} ürün bulundu`);
+
+                allProducts = snapshot.docs.map(doc => {
+                    const data = doc.data();
+                    console.log(`Ürün yükleniyor: ${doc.id} - ${data.name}`);
+                    return { 
+                        id: doc.id, 
+                        ...data,
+                        price: Number(data.price), // Fiyatı sayıya çevir
+                        stock: Number(data.stock || 0), // Stok bilgisini sayıya çevir
+                        category: data.category || 'Belirtilmemiş' // Kategori varsayılan değeri
+                    };
+                });
+
+                // Stok durumunu kontrol et ve logla
+                const stockStatus = allProducts.reduce((acc, product) => {
+                    acc.total++;
+                    if (product.stock > 0) acc.inStock++;
+                    return acc;
+                }, { total: 0, inStock: 0 });
+                
+                console.log('Stok durumu özeti:', {
+                    toplamÜrün: stockStatus.total,
+                    stoktaOlan: stockStatus.inStock,
+                    stoktaOlmayan: stockStatus.total - stockStatus.inStock
+                });
+                
+                console.log('Tüm ürünler yüklendi:', allProducts);
+                
+                // Filtreleri uygula
+                const filteredProducts = applyFiltersToProducts(allProducts);
+                displayProducts(filteredProducts);
+                
+                const endTime = performance.now();
+                console.log(`Ürünler başarıyla yüklendi ve görüntülendi. Toplam süre: ${(endTime - startTime).toFixed(2)}ms`);
+
+            } catch (error) {
+                console.error('Ürünler yüklenirken hata oluştu:', error);
+                console.error('Hata detayları:', {
+                    message: error.message,
+                    code: error.code,
+                    stack: error.stack
+                });
+                const productsGrid = document.getElementById('productsGrid');
+                productsGrid.innerHTML = '<div class="col-12"><p class="text-center text-danger">Ürünler yüklenirken bir hata oluştu.</p></div>';
+            }
+        }
+
+        // Filtreleri ürünlere uygula
+        function applyFiltersToProducts(products) {
+            console.log('Filtreler uygulanıyor:', currentFilters);
+            
+            let filtered = [...products];
+
+            // Kategori filtresi
+            if (currentFilters.category) {
+                filtered = filtered.filter(product => 
+                    product.category?.toLowerCase() === currentFilters.category.toLowerCase()
+                );
+                console.log(`Kategori filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+
+            // Arama filtresi
+            if (currentFilters.searchTerm) {
+                const searchTerm = currentFilters.searchTerm.toLowerCase();
+                filtered = filtered.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm) ||
+                    product.brand.toLowerCase().includes(searchTerm) ||
+                    product.description?.toLowerCase().includes(searchTerm)
+                );
+                console.log(`Arama filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+
+            // Marka filtresi
+            if (currentFilters.brand) {
+                filtered = filtered.filter(product =>
+                    product.brand.toLowerCase() === currentFilters.brand.toLowerCase()
+                );
+                console.log(`Marka filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+
+            // Fiyat filtresi
+            if (currentFilters.minPrice !== null) {
+                filtered = filtered.filter(product => product.price >= currentFilters.minPrice);
+                console.log(`Min fiyat filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+            if (currentFilters.maxPrice !== null) {
+                filtered = filtered.filter(product => product.price <= currentFilters.maxPrice);
+                console.log(`Max fiyat filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+
+            // Stok filtresi
+            if (currentFilters.stockFilter === 'instock') {
+                filtered = filtered.filter(product => product.stock > 0);
+                console.log(`Stokta var filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            } else if (currentFilters.stockFilter === 'outofstock') {
+                filtered = filtered.filter(product => product.stock <= 0);
+                console.log(`Stokta yok filtresi uygulandı: ${filtered.length} ürün kaldı`);
+            }
+
+            // Sıralama
+            filtered.sort((a, b) => {
+                let comparison = 0;
+                switch (currentFilters.sortField) {
+                    case 'name':
+                        comparison = a.name.localeCompare(b.name, 'tr');
+                        break;
+                    case 'price':
+                        comparison = a.price - b.price;
+                        break;
+                    case 'brand':
+                        comparison = a.brand.localeCompare(b.brand, 'tr');
+                        break;
+                    case 'category':
+                        comparison = (a.category || '').localeCompare(b.category || '', 'tr');
+                        break;
+                    case 'date':
+                        comparison = new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
+                        break;
+                    default:
+                        comparison = 0;
+                }
+                return currentFilters.sortDirection === 'asc' ? comparison : -comparison;
+            });
+            console.log('Sıralama uygulandı');
+
+            return filtered;
+        }
+
+        // Ürünleri görüntüle
+        function displayProducts(products) {
+            const productsGrid = document.getElementById('productsGrid');
+            const resultsCount = document.getElementById('resultsCount');
+            
+            resultsCount.textContent = `${products.length} ürün gösteriliyor`;
+            
+            if (products.length === 0) {
+                productsGrid.innerHTML = `
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-search fa-3x mb-3 text-muted"></i>
+                        <h3>Ürün bulunamadı</h3>
+                        <p class="text-muted">Arama kriterlerinize uygun ürün bulunamadı.</p>
+                        <button class="btn btn-primary" onclick="clearAllFilters()">
+                            Filtreleri Temizle
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+
+            productsGrid.innerHTML = products.map(product => `
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="${product.imageUrl || 'https://placehold.co/400x300?text=Enstrüman'}" 
+                             alt="${product.name}" 
+                             onerror="this.src='https://placehold.co/400x300?text=Enstrüman'">
+                        ${product.stock <= 0 ? '<div class="product-badge" style="background: #dc3545;">Stokta Yok</div>' : ''}
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">${product.brand}</div>
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-price">
+                            <span class="current-price">${product.price.toLocaleString('tr-TR')} TL</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-add-cart" 
+                                    onclick="addToCart('${product.id}')" 
+                                    ${product.stock <= 0 ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-cart"></i>
+                                ${product.stock <= 0 ? 'Stokta Yok' : 'Sepete Ekle'}
+                            </button>
+                            <button class="btn-details" onclick="showDetails('${product.id}')">
+                                <i class="fas fa-info-circle"></i>
+                                Detaylar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filtreleri uygula
+        function applyFilters() {
+            console.log('Filtreler uygulanıyor...');
+            
+            // Filtre değerlerini al ve doğrula
+            const minPrice = document.getElementById('minPrice').value;
+            const maxPrice = document.getElementById('maxPrice').value;
+
+            // Fiyat değerlerini doğrula
+            if (minPrice && maxPrice && Number(minPrice) > Number(maxPrice)) {
+                alert('Minimum fiyat, maksimum fiyattan büyük olamaz!');
+                document.getElementById('minPrice').value = '';
+                document.getElementById('maxPrice').value = '';
+                return;
+            }
+
+            currentFilters = {
+                category: document.getElementById('categoryFilter').value,
+                searchTerm: document.getElementById('searchTerm').value.toLowerCase(),
+                brand: document.getElementById('brandFilter').value,
+                minPrice: minPrice ? Number(minPrice) : null,
+                maxPrice: maxPrice ? Number(maxPrice) : null,
+                stockFilter: document.getElementById('stockFilter').value,
+                sortField: document.getElementById('sortField').value,
+                sortDirection: document.getElementById('sortDirection').value
+            };
+
+            console.log('Güncel filtre değerleri:', currentFilters);
+
+            // URL'yi güncelle
+            const urlParams = new URLSearchParams(window.location.search);
+            Object.entries(currentFilters).forEach(([key, value]) => {
+                if (value) {
+                    urlParams.set(key, value);
+                } else {
+                    urlParams.delete(key);
+                }
+            });
+            window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+
+            // Filtreleri uygula ve ürünleri göster
+            const filteredProducts = applyFiltersToProducts(allProducts);
+            displayProducts(filteredProducts);
+        }
+
+        // Tüm filtreleri temizle
+        function clearAllFilters() {
+            console.log('Tüm filtreler temizleniyor...');
+            
+            // Form elemanlarını sıfırla
+            document.getElementById('categoryFilter').value = '';
+            document.getElementById('searchTerm').value = '';
+            document.getElementById('brandFilter').value = '';
+            document.getElementById('minPrice').value = '';
+            document.getElementById('maxPrice').value = '';
+            document.getElementById('stockFilter').value = '';
+            document.getElementById('sortField').value = 'name';
+            document.getElementById('sortDirection').value = 'asc';
+
+            // Filtreleri sıfırla
+            currentFilters = {
+                category: '',
+                searchTerm: '',
+                brand: '',
+                minPrice: null,
+                maxPrice: null,
+                stockFilter: '',
+                sortField: 'name',
+                sortDirection: 'asc'
+            };
+
+            // URL'yi temizle
+            window.history.replaceState({}, '', window.location.pathname);
+
+            // Ürünleri yeniden göster
+            displayProducts(allProducts);
+            console.log('Tüm filtreler temizlendi');
+        }
+
+        // Sepete ürün ekle
+        async function addToCart(productId) {
+            console.log(`Sepete ürün ekleniyor: ${productId}`);
+            const startTime = performance.now();
+            
+            try {
+                console.log('Ürün bilgileri getiriliyor...');
+                const productDoc = await firebase.firestore().collection('products').doc(productId).get();
+                
+                if (!productDoc.exists) {
+                    console.error('Ürün bulunamadı:', productId);
+                    throw new Error('Ürün bulunamadı');
+                }
+
+                const product = productDoc.data();
+                console.log('Ürün bilgileri alındı:', product);
+
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                console.log('Mevcut sepet:', cart);
+
+                const existingItem = cart.find(item => item.id === productId);
+                if (existingItem) {
+                    console.log('Ürün sepette mevcut, miktar artırılıyor');
+                    existingItem.quantity += 1;
+                } else {
+                    console.log('Yeni ürün sepete ekleniyor');
+                    cart.push({
+                        id: productId,
+                        name: product.name,
+                        brand: product.brand,
+                        price: product.price,
+                        imageUrl: product.imageUrl,
+                        quantity: 1
+                    });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                console.log('Sepet güncellendi:', cart);
+                
+                updateCartCount();
+                const endTime = performance.now();
+                console.log(`Ürün sepete eklendi. Toplam süre: ${(endTime - startTime).toFixed(2)}ms`);
+                
+                alert('Ürün sepete eklendi!');
+            } catch (error) {
+                console.error('Sepete eklenirken hata oluştu:', error);
+                console.error('Hata detayları:', {
+                    message: error.message,
+                    code: error.code,
+                    stack: error.stack
+                });
+                alert('Ürün sepete eklenirken bir hata oluştu!');
+            }
+        }
+
+        // Ürün detaylarını göster
+        async function showDetails(productId) {
+            console.log(`Ürün detayları getiriliyor: ${productId}`);
+            try {
+                const db = firebase.firestore();
+                const productDoc = await db.collection('products').doc(productId).get();
+                
+                if (!productDoc.exists) {
+                    console.error('Ürün bulunamadı:', productId);
+                    alert('Ürün bulunamadı!');
+                    return;
+                }
+
+                const product = productDoc.data();
+                console.log('Ürün detayları:', product);
+
+                // Modal içeriğini güncelle
+                document.getElementById('modalProductName').textContent = product.name;
+                document.getElementById('modalProductBrand').textContent = product.brand;
+                document.getElementById('modalProductPrice').textContent = `${Number(product.price).toLocaleString('tr-TR')} TL`;
+                
+                const stockElement = document.getElementById('modalProductStock');
+                const isInStock = Number(product.stock) > 0;
+                stockElement.textContent = `Stok Durumu: ${isInStock ? 'Stokta Var' : 'Stokta Yok'}`;
+                stockElement.className = `product-details-stock ${isInStock ? 'in-stock' : 'out-of-stock'}`;
+                
+                document.getElementById('modalProductDescription').textContent = product.description || 'Açıklama bulunmuyor.';
+                document.getElementById('modalProductCategory').textContent = `Kategori: ${product.category || 'Belirtilmemiş'}`;
+                
+                const productImage = document.getElementById('modalProductImage');
+                productImage.src = product.imageUrl || 'https://placehold.co/400x300?text=Enstrüman';
+                productImage.alt = product.name;
+                productImage.onerror = function() {
+                    this.src = 'https://placehold.co/400x300?text=Enstrüman';
+                };
+
+                // Sepete ekle butonunu güncelle
+                const addToCartBtn = document.getElementById('modalAddToCartBtn');
+                if (isInStock) {
+                    addToCartBtn.disabled = false;
+                    addToCartBtn.innerHTML = '<i class="fas fa-shopping-cart"></i> Sepete Ekle';
+                    addToCartBtn.onclick = () => addToCart(productId);
+                } else {
+                    addToCartBtn.disabled = true;
+                    addToCartBtn.innerHTML = '<i class="fas fa-times"></i> Stokta Yok';
+                }
+
+                // Modalı göster
+                showModal('productDetailsModal');
+            } catch (error) {
+                console.error('Ürün detayları yüklenirken hata oluştu:', error);
+                alert('Ürün detayları yüklenirken bir hata oluştu!');
+            }
+        }
+
+        // Sepet sayısını güncelle
+        function updateCartCount() {
+            console.log('Sepet sayısı güncelleniyor...');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartCount = document.getElementById('cartCount');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            console.log(`Sepet sayısı güncellendi: ${totalItems} ürün`);
+        }
+
+        // Kategorileri getir ve görüntüle
+        async function fetchAndDisplayCategories() {
+            console.log('Kategoriler getiriliyor...');
+            try {
+                const db = firebase.firestore();
+                const snapshot = await db.collection('categories').get();
+                
+                const categories = snapshot.docs.map(doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+                
+                console.log(`${categories.length} kategori bulundu:`, categories);
+
+                // Navbar dropdown menüsünü güncelle
+                const categoryDropdown = document.getElementById('categoryDropdown');
+                categoryDropdown.innerHTML = categories.map(category => `
+                    <li><a href="javascript:void(0)" onclick="navigateToCategory('${category.name}')">${category.name}</a></li>
+                `).join('');
+
+                // Filtre panelindeki kategori seçimini güncelle
+                const categoryFilter = document.getElementById('categoryFilter');
+                categoryFilter.innerHTML = '<option value="">Tüm Kategoriler</option>' + 
+                    categories.map(category => `
+                        <option value="${category.name}">${category.name}</option>
+                    `).join('');
+
+                console.log('Kategori menüleri güncellendi');
+
+                // URL'deki kategori parametresini kontrol et
+                const urlParams = new URLSearchParams(window.location.search);
+                const categoryParam = urlParams.get('category');
+                if (categoryParam) {
+                    categoryFilter.value = categoryParam;
+                    console.log('URL kategori parametresi uygulandı:', categoryParam);
+                }
+
+            } catch (error) {
+                console.error('Kategoriler yüklenirken hata oluştu:', error);
+            }
+        }
+
+        // Kategori yönlendirmesi için fonksiyon
+        function navigateToCategory(category) {
+            console.log(`Kategoriye yönlendiriliyor: ${category}`);
+            window.location.href = `/Home/Products?category=${encodeURIComponent(category)}`;
+        }
+
+        // Sayfa yüklendiğinde
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Sayfa yüklendi, veriler getiriliyor...');
+            
+            // URL'den filtreleri al
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('category')) {
+                document.getElementById('categoryFilter').value = urlParams.get('category');
+            }
+            if (urlParams.has('brand')) {
+                document.getElementById('brandFilter').value = urlParams.get('brand');
+            }
+            if (urlParams.has('minPrice')) {
+                document.getElementById('minPrice').value = urlParams.get('minPrice');
+            }
+            if (urlParams.has('maxPrice')) {
+                document.getElementById('maxPrice').value = urlParams.get('maxPrice');
+            }
+            if (urlParams.has('stockFilter')) {
+                document.getElementById('stockFilter').value = urlParams.get('stockFilter');
+            }
+            if (urlParams.has('sortField')) {
+                document.getElementById('sortField').value = urlParams.get('sortField');
+            }
+            if (urlParams.has('sortDirection')) {
+                document.getElementById('sortDirection').value = urlParams.get('sortDirection');
+            }
+            if (urlParams.has('searchTerm')) {
+                document.getElementById('searchTerm').value = urlParams.get('searchTerm');
+            }
+
+            fetchAndDisplayCategories();
+            fetchAndDisplayProducts();
+            updateCartCount();
+
+            // Eğer URL'de herhangi bir filtre parametresi varsa otomatik filtre uygula
+            if ([...urlParams.keys()].length > 0) {
+                setTimeout(applyFilters, 500); // Kategoriler ve ürünler yüklendikten sonra filtre uygula
+            }
+        });
+
+        // Modal işlemleri için fonksiyonlar
+        function showModal(modalId) {
+            console.log(`${modalId} modalı gösteriliyor...`);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Sayfanın scrollunu engelle
+            } else {
+                console.error(`Modal bulunamadı: ${modalId}`);
+            }
+        }
+
+        function hideModal(modalId) {
+            console.log(`${modalId} modalı kapatılıyor...`);
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Sayfanın scrollunu geri aç
+            }
+        }
+
+        // Modal dışına tıklandığında kapatma
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // ESC tuşu ile modalı kapatma
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.getElementsByClassName('modal');
+                for (let modal of modals) {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

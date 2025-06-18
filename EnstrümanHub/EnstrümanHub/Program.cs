@@ -1,63 +1,108 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using EnstrümanHub.Data;
-using EnstrümanHub.Repositories;
-using EnstrümanHub.Services;
 using System.Text;
+using EnstrümanHub.Middleware;
+using EnstrümanHub.Services;
+using Google.Cloud.Firestore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 
-// Configure DbContext with retry policy
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+// Firebase servislerini ekle
+builder.Services.AddSingleton<IFirebaseAuthService, FirebaseAuthService>();
+
+// Firestore servisini ekle
+builder.Services.AddSingleton<IAdminService, AdminService>();
+
+// Firebase ve Firestore servislerini ekle
+builder.Services.AddSingleton<FirebaseAuthService>();
+builder.Services.AddSingleton<FirestoreDb>(provider =>
 {
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        sqlServerOptionsAction: sqlOptions =>
-        {
-            sqlOptions.EnableRetryOnFailure(
-                maxRetryCount: 5,
-                maxRetryDelay: TimeSpan.FromSeconds(30),
-                errorNumbersToAdd: null);
-        });
+    var projectId = builder.Configuration["Firebase:ProjectId"];
+    var credentialsPath = builder.Configuration["Firebase:CredentialsPath"];
+    
+    if (string.IsNullOrEmpty(projectId))
+    {
+        throw new InvalidOperationException("Firebase:ProjectId configuration is missing");
+    }
+    
+    if (string.IsNullOrEmpty(credentialsPath))
+    {
+        throw new InvalidOperationException("Firebase:CredentialsPath configuration is missing");
+    }
+
+    if (!File.Exists(credentialsPath))
+    {
+        throw new InvalidOperationException($"Firebase credentials file not found at: {credentialsPath}");
+    }
+
+    var credentials = Google.Apis.Auth.OAuth2.GoogleCredential
+        .FromFile(credentialsPath)
+        .CreateScoped("https://www.googleapis.com/auth/cloud-platform");
+
+    return new FirestoreDbBuilder
+    {
+        ProjectId = projectId,
+        Credential = credentials
+    }.Build();
 });
 
-// Register repositories
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-// Register JwtTokenGenerator service
-builder.Services.AddScoped<JwtTokenGenerator>();
-
-// Configure JWT Authentication
-var jwtSettings = builder.Configuration.GetSection("JwtSettings");
-var secretKey = jwtSettings.GetValue<string>("SecretKey");
-
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+// JWT Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
+        var jwtKey = builder.Configuration["Jwt:Key"];
+        if (string.IsNullOrEmpty(jwtKey))
+        {
+            throw new InvalidOperationException("JWT Key is not configured in appsettings.json");
+        }
 
-        ValidIssuer = jwtSettings.GetValue<string>("Issuer"),
-        ValidAudience = jwtSettings.GetValue<string>("Audience"),
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
-    };
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+        };
+    });
+
+// Authorization politikası ekle
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy =>
+        policy.RequireRole("Admin"));
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Logging'i yapılandır
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+
+// Register services
+builder.Services.AddScoped<IAdminService, AdminService>();
+
+// CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -85,27 +130,29 @@ app.UseExceptionHandler(errorApp =>
 });
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAll");
 
-// **Add Authentication BEFORE Authorization**
+app.UseStaticFiles();
+
+// Default dosyaları servis et
+app.UseDefaultFiles();
+
+// API isteklerini logla
+app.UseMiddleware<RequestLoggingMiddleware>();
+
+// Firebase middleware'ini ekle (Authentication'dan önce)
+app.UseMiddleware<FirebaseAuthMiddleware>();
+
+// Authentication ve Authorization middleware'lerini ekle
 app.UseAuthentication();
 app.UseAuthorization();
 
+// API endpoint'lerini yapılandır
 app.MapControllers();
 
-// Ensure database is created
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    try
-    {
-        var context = services.GetRequiredService<ApplicationDbContext>();
-        context.Database.EnsureCreated();
-    }
-    catch (Exception ex)
-    {
-        var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occurred while creating the database.");
-    }
-}
+// Frontend route'larını yapılandır
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
